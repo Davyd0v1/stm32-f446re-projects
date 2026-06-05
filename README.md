@@ -1,28 +1,24 @@
 # STM32F446RE Projects
 
-Набор лабораторных проектов для STM32F446RE, выполненных в STM32CubeIDE с использованием HAL.
+Collection of laboratory projects developed for the STM32F446RE microcontroller using STM32CubeIDE and HAL drivers.
 
-## Состав репозитория
+## Repository contents
 
-| Lab | Тема | Основная периферия |
-|-----|------|--------------------|
+| Lab | Topic | Main peripherals |
+|-----|-------|------------------|
 | Lab 8 | PWM controller | TIM1, TIM2, TIM3, USART2 |
 | Lab 9 | ADC + UART | ADC1, USART2 |
 | Lab 10 | I2C LCD / scan | I2C1, USART2 |
 | Lab 11 | SPI counter | SPI1, USART2 |
 | Lab 12 | WWDG watchdog | WWDG, USART2, GPIO |
 
-## Общая информация
+## Overview
 
-Проекты предназначены для платы STM32F446RE Nucleo и демонстрируют работу с различными периферийными модулями микроконтроллера.
+This repository contains a set of embedded systems laboratory projects for the STM32F446RE Nucleo board.
 
-В репозитории находятся:
-- исходный код проектов;
-- файлы конфигурации STM32CubeIDE;
-- схемы подключения;
-- изображения и скриншоты работы проектов.
+Each project demonstrates a different peripheral or communication interface and includes source code, configuration files, and supporting images.
 
-## Структура репозитория
+## Repository structure
 
 ```text
 stm32-f446re-projects/
@@ -31,16 +27,3 @@ stm32-f446re-projects/
 ├── lab10_i2c_lcd/
 ├── lab11_spi_counter/
 └── lab12_wwdg/
-
-Как открыть проект
-Запустить STM32CubeIDE.
-Выбрать File → Open Projects from File System.
-Указать папку нужной лабораторной.
-Дождаться загрузки проекта.
-При необходимости обновить конфигурацию CubeMX.
-Собрать проект.
-Прошить плату через ST-LINK.
-
-Примечание
-
-Если при открытии проекта появляются предупреждения, рекомендуется сначала пересоздать code generation через STM32CubeMX, а затем выполнить сборку заново.
